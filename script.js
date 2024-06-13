@@ -15,6 +15,9 @@ buttons.forEach(button => {
         if(button.id === 'yellow') {
             body.style.backgroundColor = button.id;
         }
+        if(button.id === 'purple') {
+            body.style.backgroundColor = button.id;
+        }
     });
 }); 
 
