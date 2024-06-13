@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .button span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            border-radius: 5px;
+        }
+
+        #red span {
+            background-color: red;
+        }
+
+        #blue span {
+            background-color: blue;
+        }
+
+        #green span {
+            background-color: green;
+        }
+
+        #yellow span {
+            background-color: yellow;
+            color: black; /* Yellow background requires dark text for better readability */
+        }
+
+        .button#yellow {
+            color: black; /* Yellow background requires dark text for better readability */
+        }
+
+    </style>
+    <title>Colored Buttons</title>
+</head>
+<body>
+    <span id="red" class="button"><span></span>Red Button</span>
+    <span id="blue" class="button"><span></span>Blue Button</span>
+    <span id="green" class="button"><span></span>Green Button</span>
+    <span id="yellow" class="button"><span></span>Yellow Button</span>
+    <script src ="script.js">      </script>
+</body>
+</html>
